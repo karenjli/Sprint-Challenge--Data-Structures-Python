@@ -14,6 +14,7 @@ duplicates = []
 # Run time is 10.3 seconds
 # Need to reduce to 1 or less second
 # Double for loop is time consuming
+# Create a hash
 hash = {}
 
 # for name_1 in names_1:
@@ -22,10 +23,13 @@ hash = {}
 #             duplicates.append(name_1)
 
 for names in names_1:
+    # Save each item in file 1 in hash
     hash[names] = True
 
 for names_in_two in names_2:
+    # check if each name is in hash
     if names_in_two in hash:
+        # add duplicated name to the duplicates array
         duplicates.append(names_in_two)
     else:
         pass
