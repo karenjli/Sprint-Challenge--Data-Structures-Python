@@ -12,8 +12,16 @@ f.close()
 
 duplicates = []
 # Run time is 10.3 seconds
+# The run time complexity is O(n^2)
+# because each item in the first list needs to loop through
+# every single item in the second list once. Hence, it results in a
+# n^2 run time complexity.
+
 # Need to reduce to 1 or less second
 # Double for loop is time consuming
+# The following method runs in O(n) becauase it only needs tro loop through
+# the lists once.
+
 # Create a hash
 hash = {}
 
